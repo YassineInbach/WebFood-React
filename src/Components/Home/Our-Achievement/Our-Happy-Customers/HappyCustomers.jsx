@@ -1,9 +1,9 @@
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import "../../ContactHome/ContactHome.css";
-import avatar1 from "../../../../../public/Images/avatar1.png";
-import avatar3 from "../../../../../public/Images/avatar3.png";
-import avatar2 from "../../../../../public/Images/avatar2.png";
+import avatar1 from "../../../../../public/Images/Avatar1.png";
+import avatar3 from "../../../../../public/Images/Avatar3.png";
+import avatar2 from "../../../../../public/Images/Avatar2.png";
 export default function HappyCustomers() {
   return (
     <section>
