@@ -1,0 +1,172 @@
+.background {
+  background-image: url("../../../../public/Images/Background.png");
+  background-size: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 67vh;
+  width: 100%;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 67vh;
+  padding: 0 3em;
+  max-width: 650px;
+}
+
+.parent h1 {
+  font-size: var(--font-title-h1);
+  font-weight: 400;
+  letter-spacing: 3px;
+  padding-bottom: 15px;
+  line-height: 48px;
+  color: var(--white);
+}
+
+.parent h1 span {
+  font-weight: 600;
+  color: var(--grey);
+}
+
+.parent p {
+  font-size: var(--font-para);
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--white);
+}
+
+.parent p span {
+  font-weight: 600;
+  color: var(--grey);
+}
+
+.parent .btns {
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+  padding-top: 1.8em;
+}
+
+/*****************************************************Media Query**************************************/
+@media screen and (max-width: 320px) {
+  .background {
+    background-size: cover;
+    height: 38vh;
+  }
+
+  .parent {
+    align-items: center;
+    text-align: center;
+    padding: 0 1em;
+    max-width: max-content;
+    height: 38vh;
+  }
+
+  .parent h1 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    line-height: 20px;
+  }
+
+  .parent p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+
+  .parent .btns {
+    flex-wrap: wrap;
+    padding-top: 10px;
+    gap: 7px;
+    justify-content: center;
+  }
+
+  .parent .btns button {
+width: 100px;  }
+
+  .parent p span,
+  .parent h1 span {
+    color: #e5e5e5;
+  }
+}
+@media screen and (min-width : 320px) and (max-width : 480px){
+  .background {
+    background-size: cover;
+    height: 40vh;
+  }
+
+  .parent {
+    align-items: center;
+    text-align: center;
+    padding: 0 1em;
+    max-width: inherit;
+    height: 40vh;
+  }
+
+  .parent h1 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding-bottom: 13px;
+    line-height: 25px;
+  }
+
+  .parent p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+
+  .parent .btns {
+    flex-wrap: wrap;
+    padding-top: 15px;
+    gap: 10px;
+  }
+  .parent .btns button{width: 130px;}
+
+  .parent .btns button {
+    flex: 1 1 auto;
+  }
+
+  .parent p span,
+  .parent h1 span {
+    color: #e5e5e5;
+  }
+}
+@media screen and (min-width : 480px) and (max-width : 767px) {
+  .background {
+    height: 50vh;
+ }
+  .parent {
+    
+    height: 50vh;
+    padding: 0 1em;
+}
+.parent h1 {
+  font-size: 29px;
+  padding-bottom: 11px;
+  line-height: 40px;
+ }
+
+}
+@media screen and (min-width : 767px) and (max-width : 900px){
+  .background {
+    height: 50vh;
+ }
+ .parent {
+  height: 50vh;
+  padding: 0 1em;
+}
+.parent h1 {
+  font-size: 30px;
+  line-height: normal;
+}
+.parent .btns {
+  column-gap: 10px;
+  padding-top: 1em;
+}
+
+}

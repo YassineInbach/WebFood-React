@@ -1,0 +1,191 @@
+
+ .card{
+   padding: 1em;
+    background: #F7F7F7;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+ }
+ .card img{
+    width: 280px;
+}
+.card .card-info {
+    padding: 10px 0;
+}
+ .card .card-info h4{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--black);
+    padding-bottom: 7px;
+    line-height: 22px;
+}
+
+ .card .card-info p{
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+line-height: 18px;    color: var(--black);
+    padding-bottom: 13px;
+    max-width: 280px;
+}
+ .card .card-info .btns {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    max-width: 250px;
+    padding: 2px 0;
+}
+ .card .card-info .btns p{
+    font-size: var(--font-para);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--black);
+}
+/**************************************************************Media Query****************************************/
+@media screen and (max-width : 320px) {
+    .cards {
+        justify-content: initial;
+        padding: 1em 0 ;
+        gap: 1em 0;
+    }
+    .card {
+        padding: 10px;
+    }
+    .card img {
+        width: 100%;
+    }
+    .card .card-info {
+        padding: 7px 0;
+    }
+    .card .card-info h4 {
+        font-size: 12px;
+        padding-bottom: 4px;
+        line-height: 18px;
+    }
+    .card .card-info p {
+        font-size: 11px;
+        line-height: 15px;
+        padding-bottom: 0px;
+        max-width: max-content;
+    }
+    .card .card-info .btns {
+        max-width: 220px;
+        padding: 10px 0 0;
+    }
+}
+
+@media screen and (min-width : 320px) and (max-width : 480px){
+    .cards {
+        padding: 1em 0 1em;
+        gap: 1em 0;
+    }
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 18px 0 7px;
+        width: 90%;
+
+    }
+    .card img {
+        width: 80%;
+    }
+    .card .card-info {
+        padding: 15px 0 5px;
+        max-width: 275px;
+    }
+    .card .card-info h4 {
+        font-size: 14px;
+        padding-bottom: 3px;
+        line-height: 21px;
+    }
+    .card .card-info p {
+        font-size: 13px;
+        line-height: 20px;
+        padding-bottom: 0px;
+        max-width: max-content;
+    }
+    .card .card-info .btns {
+padding: 10px 0 0;    }
+
+}
+
+@media screen and (min-width : 480px) and (max-width : 767px) {
+    .cards {
+        padding: 2em 0 1.5em;
+        gap: 2em;
+    }
+    .card {
+        padding: 1em 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex: 1 1 290px;
+    }
+    .card img {
+        width: 90%;
+    }
+    .card .card-info {
+        padding: 14px 0 0;
+    }
+    .card .card-info h4 {
+        font-size: 14px;
+        line-height: 19px;
+        padding-bottom: 3px;
+     }
+     .special .btns {
+        padding: 0;
+    }
+}
+@media screen and (min-width : 480px) and (max-width : 668px) , (not(min-width : 668px) and (max-width : 767px)){
+    .card {
+        flex: inherit;
+        width: 48%;
+    }
+    .cards {
+        gap: 1em;
+    }
+    .card img {
+        width: 80%;
+    }
+    .card .card-info {
+        max-width: 204px;
+    }
+    .card .card-info p {
+        font-size: 12px;
+        line-height: 17px;
+        padding-bottom: 10px;
+    }
+
+}
+@media screen and (min-width : 767px) and (max-width : 900px){
+    .cards {
+        padding: 2em 0 0;
+
+        justify-content: start;
+        gap: 1.5em ;
+    }
+    .card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 35%;    
+        flex: auto;
+    }
+    .card img {
+        width: 87%;
+    }
+    .card .card-info {
+        padding: 10px 0 0;
+        max-width: 289px;
+    }
+    .card .card-info h4 {
+        font-size: 13px;
+        padding-bottom: 4px;
+        line-height: 20px;
+    }
+
+}

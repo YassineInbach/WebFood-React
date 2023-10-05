@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+:root{
+  --black : #000;
+  --white : #fff;
+  --grey : grey;
+  --font-text : 13px;
+  --font-para : 15px;
+  --font-title-h1 :35px;
+  --font-title-h2 : 25px; 
+  --font-button : 14px;
+}
+*::selection{
+  background: var(--black);
+  color: var(--white);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  max-width: 1280px;
+  width: 100%;
+  margin:0 auto;
+  background: var(--white);
+  font-family: 'Roboto', sans-serif;
+}
+html{
+  padding: 1em 0 0;
+}
+
+button{
+  font-size: var(--font-button);
+  padding: 5px 10px;
+  font-weight: 600;
+  border: 1px solid var(--black);
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+.btn-white {
+  background-color: white;
+}
+
+.btn-transparent {
+  background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.btn-black {
+  background-color: black;
+  color: var(--white);
+  
+}
+@media screen and (max-width : 320px){
+  button{
+    font-size: 12px;
+    padding:6px;
+  }
+}
+@media screen and (min-width : 320px) and (max-width : 480px) {
+  button{
+    font-size: 13px;
+    padding:6px;
+  }
+}
+@media screen and (min-width : 480px) and (max-width : 767px) {
+  button {
+    font-size: 14px;
+    padding: 4px 9px;
+}
+}
+@media screen and (min-width : 767px) and (max-width : 900px) {
+  button {
+    padding: 4px 6px;
+  
+}
+}

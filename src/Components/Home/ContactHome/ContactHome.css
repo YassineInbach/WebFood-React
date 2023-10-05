@@ -1,0 +1,745 @@
+.container-contact{
+    padding: 4em 3em ;
+}
+.container-contact .box-contact .contact .icone{
+    font-size: 2em;
+}
+.container-contact .box-contact .contact {
+    padding-bottom: 10px;
+}
+.container-contact .box-contact{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    text-align: center;
+}
+.container-contact .box-contact .contact{
+    max-width:300px;
+}
+.container-contact .box-contact .contact h3{
+    font-weight: 500;
+    color: var(--black);
+    letter-spacing: 1.5px;
+    padding:10px 0;
+}
+.container-contact .box-contact .contact p{
+    font-size: var(--font-text);
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 1px;
+}
+.container-contact .box-contact .contact p:nth-child(3){
+    padding-bottom: 10px;
+}
+.container-contact .box-contact .contact p:nth-child(4){
+    font-size: var(--font-text);
+    font-weight: 400;
+    color: var(--grey);
+    text-decoration: underline;
+}
+.contactReservation{
+    display: 
+    flex;
+    align-items: center;
+    column-gap: 1em;
+    padding-top: 6em;
+}
+.contactReservation img{
+    width: 400px;
+}
+.contactReservation .reservation h3{
+    color: var(--grey);
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+}
+.contactReservation .reservation h2{
+    font-size: var(--font-title-h2);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding-bottom: 12px;
+}
+.contactReservation .reservation p{
+    font-size: var(--font-para);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.contactReservation .reservation form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    width: 90%;
+    padding: 15px 0;
+}
+
+.contactReservation .reservation form .input-group{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em 10px;
+    width: 100%;
+}
+.contactReservation .reservation form #inpt{
+    width: 100%;
+}
+.contactReservation .reservation form .input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 49%;
+}
+.contactReservation .reservation form .input label , .contactReservation .reservation form .textarea label{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--black);
+    letter-spacing: 1px;
+}
+.contactReservation .reservation form .input input:focus, .contactReservation .reservation form .textarea textarea:focus{
+    outline: 2px solid green;
+    border: none;
+}
+.contactReservation .reservation form .input input{
+    border: 1px solid var(--black);
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.contactReservation .reservation form .input input::placeholder{
+    font-size: 12px;
+    font-family: 500;
+    color: grey;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.contactReservation .reservation form .input input[ type]{
+    
+    color: black;
+    font-weight: 700;
+
+}
+.contactReservation .reservation form .textarea{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 5px;
+}
+.contactReservation .reservation form textarea{
+    border: 1px solid var(--black);
+    resize: none;
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    font-weight: 500;
+}
+.contactReservation .reservation form .check{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.contactReservation .reservation form .check p{
+    font-size: var(--font-text);
+    font-weight: 400;
+}
+.contactReservation .reservation form .check p span{
+    text-decoration: underline;
+}
+.achievement {
+    padding: 2em 3em;
+}
+ .achievement .our-achievement{
+    display: 
+    flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px 0;
+}
+
+.achievement .our-achievement h1{     font-size: var(--font-title-h1);
+    font-weight: 700;
+    color: var(--black);
+    letter-spacing: 3px;
+}
+.achievement .our-achievement p{
+    font-size: var(--font-para);
+    line-height: 20px;
+    color: var(--black);
+    font-weight: 400;
+    max-width: 850px;
+    letter-spacing: 1px;
+}
+.achievement .our-achievement .list{
+    padding-top: 2em ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+.achievement .our-achievement .list .list-item{
+  
+    text-align: center;
+}
+.achievement .our-achievement .list .list-item h2{
+    font-size: var(--font-title-h2);
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+.achievement .our-achievement .list .list-item p{
+    font-size: var(--font-text);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.achievement .happy-customers{
+    padding-top: 5em;
+    
+}
+
+.achievement .happy-customers .customers-info h2{
+    font-size: var(--font-title-h2);
+    font-weight: 700;
+    color: var(--black);
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+.achievement .happy-customers .customers-info p{
+    font-size: var(--font-text);
+    color: var(--black);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.achievement .happy-customers .customers-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1em;
+    padding-top: 3em ;
+}
+.achievement .happy-customers .customers-cards .customers{
+    max-width: 380px;
+    border: 1.5px solid var(--black);
+    padding: 1.5em ;
+}
+.achievement .happy-customers .customers-cards .customers .icons{
+    font-size: 1.3em;
+    color: rgb(255, 153, 0);
+    padding-bottom: 5px;
+}
+.achievement .happy-customers .customers-cards .customers p{
+    font-size: var(--font-para);
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--black);
+}
+.achievement .happy-customers .customers-cards .customers .customers-content{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding-top: 1em;
+}
+.achievement .happy-customers .customers-cards .customers .customers-content img{
+    width: 45px;
+}
+.achievement .happy-customers .customers-cards .customers .customers-content .content h4{ 
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-bottom: 2px;
+}
+.achievement .happy-customers .customers-cards .customers .customers-content .content p{
+    font-size: var(--font-text);
+    font-weight: 400;
+    color: var(--grey);
+}
+/********************************************************Media Qery***********************************************/
+@media screen and (max-width : 320px) {
+    .container-contact {
+    padding: 2em 1em 0;
+}
+.container-contact .box-contact {
+    align-items: center;
+    flex-direction: column;
+    gap: 15px 0;
+}
+.container-contact .box-contact .contact {
+    max-width: max-content;
+}
+.container-contact .box-contact .contact .icone {
+    font-size: 1.5em;
+}
+.container-contact .box-contact .contact h3 {
+    letter-spacing: 1px;
+    padding: 5px 0;
+}
+.container-contact .box-contact .contact p:nth-child(3) {
+    padding-bottom: 5px;
+}
+.container-contact .box-contact .contact p {
+      font-size: 12px;
+    line-height: 16px;
+ }
+ .container-contact .box-contact .contact p:nth-child(4) {
+    font-size: 10px;
+}
+.contactReservation {
+    flex-direction: column-reverse;
+     gap: 15px 0;
+    padding-top: 2em;
+}
+.contactReservation img {
+    width: 100%;
+    height: 250px;
+}
+.contactReservation .reservation h3 {
+    padding-bottom: 7px;
+}
+.contactReservation .reservation h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-bottom: 7px;
+}
+.contactReservation .reservation p {
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-size: 11px;
+}
+.contactReservation .reservation form {
+    gap: 15px 0;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.contactReservation .reservation form .input {
+    width: 100%;
+}
+.contactReservation .reservation form .check p {
+    font-size: 11px;
+}
+.achievement {
+    padding: 1em 1em;
+}
+.achievement .our-achievement {
+    gap: 7px 0;
+}
+.achievement .our-achievement h1 {
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.achievement .our-achievement p, .achievement .happy-customers .customers-info p,.achievement .happy-customers .customers-cards .customers p ,.achievement .happy-customers .customers-cards .customers .customers-content .content p 
+    {
+    max-width: max-content;
+    font-size: 11px;
+    line-height: 15px;
+}
+.achievement .our-achievement .list {
+    padding-top: 1em;
+    justify-content: center;
+    width: auto;
+    flex-wrap: wrap;
+    gap: 1em 2em;
+}
+.achievement .our-achievement .list .list-item h2 {
+    font-size: 16px;
+    padding-bottom: 0;
+}
+.achievement .our-achievement .list .list-item p {
+    font-size: 11px;
+ }
+ .achievement .happy-customers {
+    padding-top: 2em;
+}
+.achievement .happy-customers .customers-info h2 {
+    font-size: 14px;
+    padding-bottom: 7px;
+}
+.achievement .happy-customers .customers-cards {
+
+    padding-top: 1em;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 0 1em;
+}
+.achievement .happy-customers .customers-cards .customers {
+    max-width: max-content;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+}
+.achievement .happy-customers .customers-cards .customers .icons {
+    font-size: 12px;
+    padding-bottom: 0;
+}
+.achievement .happy-customers .customers-cards .customers .customers-content {
+    flex-direction: column;
+ gap: 10px 0;    padding-top: 10px;
+}
+.achievement .happy-customers .customers-cards .customers .customers-content img {
+    width: 35px;
+}
+.achievement .happy-customers .customers-cards .customers .customers-content{
+    text-align: center;
+    width: max-content;
+}
+.achievement .happy-customers .customers-cards .customers .customers-content .content h4{
+    font-size: 12px;
+    padding-bottom: 2px;
+}
+}
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .container-contact {
+        padding: 1.5em 1em 0;
+    }
+    .container-contact .box-contact {
+        align-items: center;
+        flex-direction: column;
+        gap: 10px 0;
+    }
+    .container-contact .box-contact .contact {
+        max-width: max-content;
+    }
+    .container-contact .box-contact .contact .icone {
+        font-size: 1.6em;
+    }
+    .container-contact .box-contact .contact h3 {
+        letter-spacing: 1px;
+        padding: 5px 0;
+    }
+    .container-contact .box-contact .contact p:nth-child(3) {
+        padding-bottom: 8px;
+    }
+    .container-contact .box-contact .contact p {
+          font-size: 13px;
+        line-height: 17px;
+     }
+     .container-contact .box-contact .contact p:nth-child(4) {
+        font-size: 12px;
+    }
+    .contactReservation {
+        flex-direction: column-reverse;
+         gap: 15px 0;
+        padding-top: 1em;
+    }
+    .contactReservation img {
+        width: 100%;
+        height: 240px;
+    }
+    .contactReservation .reservation h3 {
+        padding-bottom: 7px;
+    }
+    .contactReservation .reservation h2 {
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding-bottom: 7px;
+    }
+    .contactReservation .reservation p {
+        letter-spacing: 1px;
+        line-height: 19px;
+        font-size: 13px;
+    }
+    .contactReservation .reservation form {
+        gap: 12px 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .contactReservation .reservation form .input {
+        width: 100%;
+    }
+    .contactReservation .reservation form .check p {
+        font-size: 12px;
+    }
+    .achievement {
+        padding: 1em 1em;
+    }
+    .achievement .our-achievement {
+        gap: 7px 0;
+    }
+    .achievement .our-achievement h1 {
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    .achievement .our-achievement p, .achievement .happy-customers .customers-info p,.achievement .happy-customers .customers-cards .customers p ,.achievement .happy-customers .customers-cards .customers .customers-content .content p 
+        {
+        max-width: max-content;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .achievement .our-achievement .list {
+        padding-top: 1em;
+        justify-content: center;
+        width: auto;
+        flex-wrap: wrap;
+        gap: 1em 2em;
+    }
+    .achievement .our-achievement .list .list-item h2 {
+        font-size: 16px;
+        padding-bottom: 0;
+    }
+    .achievement .our-achievement .list .list-item p {
+        font-size: 13px;
+     }
+     .achievement .happy-customers {
+        padding-top: 2em;
+    }
+    .achievement .happy-customers .customers-info h2 {
+        font-size: 17px;
+        padding-bottom: 7px;
+    }
+    .achievement .happy-customers .customers-cards {
+    
+        padding-top: 1em;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        gap: 0 1em;
+    }
+    .achievement .happy-customers .customers-cards .customers {
+        max-width: max-content;
+        padding: 1em;
+        scroll-snap-type: x mandatory;
+    }
+    .achievement .happy-customers .customers-cards .customers .icons {
+        font-size: 12px;
+        padding-bottom: 0;
+    }
+    .achievement .happy-customers .customers-cards .customers .customers-content {
+        flex-direction: column;
+     gap: 10px 0;    padding-top: 10px;
+    }
+    .achievement .happy-customers .customers-cards .customers .customers-content img {
+        width: 40px;
+    }
+    .achievement .happy-customers .customers-cards .customers .customers-content{
+        text-align: center;
+        width: max-content;
+    }
+    .achievement .happy-customers .customers-cards .customers .customers-content .content h4{
+        font-size: 14px;
+        padding-bottom: 2px;
+    }
+}
+@media screen and (min-width : 480px) and (max-width : 767px){
+    .container-contact {
+        padding: 3em 1em 0;
+    }
+    .container-contact .box-contact .contact h3 {
+        padding: 7px 0;
+    }
+    .container-contact .box-contact .contact p:nth-child(3) {
+        padding-bottom: 5px;
+    }
+    .container-contact .box-contact .contact p:nth-child(4) {
+        line-height: 24px;
+     }
+     .container-contact .box-contact .contact p{
+        line-height: 17px;
+     }
+     .container-contact .box-contact {
+   
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1em 2em;
+    }
+    .contactReservation {
+        padding-top: 3em;
+        flex-direction: column-reverse;
+        gap: 1.5em 0;
+    }
+    .contactReservation img {
+        width: 90%;
+        height: 350px;
+        object-fit: fill;
+    }
+    .contactReservation .reservation h2 {
+        font-size: 18px;
+        padding-bottom: 6px;
+    }
+    .contactReservation .reservation p , .achievement .our-achievement p {
+        font-size: 14px;
+     line-height: 22px;    
+    max-width: max-content;}
+     .contactReservation .reservation form {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .contactReservation .reservation form .input label, .contactReservation .reservation form .textarea label {
+        font-size: 12px;
+     }
+     .contactReservation .reservation form .input input {
+        padding: 7px;
+     }
+     .contactReservation .reservation form .input-group {
+        gap: 10px;
+     }
+     .contactReservation .reservation form .input {
+        flex: 1 1 auto;
+    }
+    .contactReservation .reservation form textarea {
+        height: 80px;
+        padding: 7px;
+        }
+        .achievement {
+            padding: 1em;
+        }
+        .achievement .our-achievement h1 {
+            font-size: 28px;
+         }
+         .achievement .our-achievement .list {
+            padding-top: 1em;
+            flex-wrap: wrap;
+            width: 86%;
+        }
+      
+        .achievement .our-achievement .list .list-item h2 {
+            font-size: 19px;
+            padding-bottom: 2px;
+        }
+        .achievement .happy-customers {
+            padding-top: 2em;
+        }
+        .achievement .happy-customers .customers-info h2 {
+            font-size: 18px;
+            padding-bottom: 6px;
+        }
+        .achievement .happy-customers .customers-cards {
+            padding-top: 2em;
+            flex-wrap: wrap;
+            gap: 1em ;
+        }
+        .achievement .happy-customers .customers-cards .customers {
+            max-width: max-content;
+            padding: 1em;
+            flex: 1 1 230px;
+        }
+        .achievement .happy-customers .customers-cards .customers .icons {
+            font-size: 1em;
+        }
+        .achievement .happy-customers .customers-cards .customers p {
+            font-size: 13px;
+            line-height: 19px;
+         }
+         .achievement .happy-customers .customers-cards .customers .customers-content img {
+            width: 40px;
+        }
+    }
+    @media screen and (min-width : 767px) and (max-width : 900px) {
+        .container-contact {
+            padding: 2em 1em;
+        }
+        .container-contact .box-contact {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2em 1em;
+        }
+        .container-contact .box-contact .contact {
+            flex: 1 1 auto;
+        }
+        .container-contact .box-contact .contact p:nth-child(3) {
+            padding-bottom: 5px;
+        }
+        .container-contact .box-contact .contact h3 {
+            padding: 7px 0;
+        }
+        .contactReservation {
+            padding-top: 2em;
+            flex-wrap: wrap;
+        }
+        .contactReservation .reservation{
+            flex: 1 1 380px;
+        }
+        .contactReservation .reservation h3 {
+            padding-bottom: 7px;
+        }
+        .contactReservation .reservation h2 {
+            font-size: 19px;
+            padding-bottom: 7px;
+        }
+        .contactReservation .reservation p {
+            font-size: 14px;
+            line-height: 21px;
+    }
+    .contactReservation .reservation form {
+        gap: 10px 0;
+         padding: 10px 0;
+    }
+    .contactReservation .reservation form .input-group {
+        gap: 10px;
+     }
+     .contactReservation .reservation form .input {
+        gap: 6px;
+        width: 100%;
+    }
+    .contactReservation img {
+        width: 350px;
+    }
+    .achievement {
+        padding: 1em 1em;
+    }
+  
+    .achievement .our-achievement h1 {
+        font-size: 30px;
+     }
+     .achievement .our-achievement p {
+        font-size: 14px;
+        line-height: 22px;
+        max-width: max-content;
+        }
+        .achievement .our-achievement .list {
+            width: 75%;
+        }
+        .achievement .happy-customers {
+            padding-top: 3em;
+        }
+        .achievement .happy-customers .customers-cards .customers p {
+            font-size: 14px;
+            line-height: 22px;
+         }
+         .achievement .happy-customers .customers-cards .customers .customers-content {
+            flex-direction: column;
+            gap: 10px 0;
+            justify-content: center;
+            text-align: center;
+        }
+        .achievement .happy-customers .customers-cards {
+            padding-top: 2em;
+        }
+        .achievement .happy-customers .customers-cards .customers {
+            padding: 1em;
+        }
+
+}
+@media screen and (min-width : 767px ) and (max-width : 778px) , (not(min-width : 778px) and (max-width : 900px)){
+    .contactReservation {
+        flex-direction: column-reverse;
+        gap: 1em 0;
+     }
+     .contactReservation .reservation form {
+        width: 100%;
+     }
+     .contactReservation img {
+        width: 85%;
+        height: 350px;
+    }
+
+}
+@media screen  and (min-width : 900px) and (max-width : 1066px){
+    .contactReservation .reservation form .input {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

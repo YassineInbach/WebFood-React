@@ -1,0 +1,390 @@
+footer{
+    background-color: var(--black);
+    padding:2em 3em 1em;
+    margin-top: 2em;
+}
+footer .newsletter{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    column-gap: 3em;
+}
+footer .newsletter-content{
+    max-width: 450px;
+}
+footer .newsletter h2{
+    font-weight: 500;
+    color: var(--white);
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+footer .newsletter p{
+    font-size: var(--font-text);
+    color: var(--white);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+footer .newsletter h3{
+    font-weight: 500;
+    color: var(--white);
+    padding-top: 15px;
+    letter-spacing: 1.5px;
+}
+footer .newsletter .frame-content{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    column-gap: 2em;
+}
+
+footer .newsletter .frame-content .frame p{
+    font-size: var(--font-text);
+    font-weight: 400;
+    color: #e5e5e5;
+    line-height: 22px;
+}
+footer .newsletter .actions form {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+footer .newsletter .actions form input{
+    padding: 6px 10px;
+    width: 100%;
+    border: 1.5px solid var(--black);
+    border-radius: 5px;
+}
+footer .newsletter .actions h3{
+    font-size: var(--font-text);
+    font-weight: 400;
+    color: #e5e5e5;
+}
+footer hr{
+    background: var(--grey);
+    height: 2px;
+    width: 100%;
+    margin: 1em 0;
+}
+footer .links{
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
+    column-gap: 5em;
+}
+footer .links .logo{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-right: auto;
+}
+footer .links .logo > img{
+    width: 35px;
+}
+footer .links .logo h2{
+    font-size: var(--font-title-h2);
+    font-family: 'Inter', sans-serif;   
+     font-weight: 700;
+     letter-spacing: 1px;
+     color: var(--white);
+}
+footer .links .colmun{
+    max-width: 350px;
+}
+footer .links .colmun h4{
+    font-weight: 500;
+    color: #e5e5e5;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+footer .links .colmun li a{
+    font-size: var(--font-text);
+    font-weight: 700;
+    color: var(--grey);
+    line-height: 25px;
+}
+footer .made-with{
+    text-align: center;
+}
+footer .made-with p{
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+footer .made-with p span{
+    color: var(--grey);
+    font-weight: 700;
+    text-decoration: underline;
+}
+/*************************************MediaQuery***********************************************/
+@media screen and (max-width : 320px ){
+    footer {
+        padding: 1em;
+        margin-top: 1em;
+    }
+    footer .newsletter {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    footer .newsletter-content {
+        max-width: max-content;
+    }
+    footer .newsletter h2 {
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+    footer .newsletter p ,footer .newsletter .frame-content .frame p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    footer .newsletter h3,footer .newsletter .actions h3 {
+        padding-top: 10px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+    footer .newsletter .frame-content {
+        flex-wrap: wrap;
+        justify-content: start;
+        padding-top: 7px;
+        gap: 10px;
+    }
+    footer .newsletter .actions form {
+        flex-wrap: wrap;
+        gap: 10px 0;
+    }
+    footer .newsletter .actions form input {
+        padding: 3px 7px;
+     }
+     footer .newsletter .actions form input::placeholder{
+        font-size: 11px;
+     }
+     .btn-transparent {
+        width: 100%;
+     }
+     footer hr {
+        height: 1px;
+        margin: 10px 0;
+    }
+    footer .links {
+        align-items: start;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    footer .links .logo {
+        column-gap: 5px;
+    }
+    footer .links .logo > img {
+        width: 20px;
+    }
+    footer .links .logo h2 {
+        font-size: 14px;
+    }
+    footer .links .colmun {
+        max-width: max-content;
+        flex: 1 1 auto;
+    }
+    footer .links .colmun h4 {
+        padding-bottom: 5px;
+        font-size: 12px;
+    }
+    footer .links .colmun li a ,footer .made-with p{
+        line-height: 15px;
+        font-size: 11px;
+    }
+}
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    footer {
+        padding: 1em 1em 1em;
+        margin-top: 1em;
+    }
+    footer .newsletter {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    footer .newsletter-content {
+        max-width: max-content;
+    }
+    footer .newsletter h2 {
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+    footer .newsletter p ,footer .newsletter .frame-content .frame p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    footer .newsletter h3,footer .newsletter .actions h3 {
+        padding-top: 10px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    footer .newsletter .frame-content {
+        flex-wrap: wrap;
+        justify-content: start;
+        padding-top: 7px;
+        gap: 20px;
+    }
+    footer .newsletter .actions form {
+        flex-wrap: wrap;
+        gap: 10px 0;
+    }
+    footer .newsletter .actions form input {
+        padding: 5px 7px;
+     }
+     footer .newsletter .actions form input::placeholder{
+        font-size: 12px;
+     }
+     .btn-transparent ,footer .newsletter .actions {
+        width: 100%;
+     }
+     footer .links {
+        align-items: start;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 1em 1.3em;
+    }
+    footer .links .logo {
+        column-gap: 5px;
+        flex: 1 1 auto;
+    }
+    footer .links .logo > img {
+        width: 25px;
+    }
+    footer .links .logo h2 {
+        font-size: 16px;
+    }
+    footer .links .colmun {
+        max-width: max-content;
+        flex: 1 1 220px;
+    }
+    footer .links .colmun h4 {
+        padding-bottom: 5px;
+        font-size: 13px;
+    }
+    footer .links .colmun li a ,footer .made-with p{
+        line-height: 17px;
+        font-size: 12px;
+    }
+}
+@media screen and (min-width : 480px) and (max-width : 767px){
+    footer {
+        padding: 1em 1em 1em;
+        margin-top: 1em;
+    }
+    footer .newsletter {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+    }
+    footer .newsletter-content {
+        max-width: max-content;
+        flex: 1 1 278px;
+    }
+    footer .newsletter h2 {
+            padding-bottom: 7px;
+            font-size: 18px;
+            line-height: 21px;
+    }
+    footer .newsletter p {
+        line-height: 20px;
+    }
+    footer .newsletter h3 {
+        font-size: 16px;
+        padding-top: 10px;
+        line-height: 21px;
+    }
+    footer .newsletter .frame-content {
+        padding-top: 8px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    footer .newsletter .frame-content .frame{
+        flex: 1 1 auto;
+    }
+    footer .newsletter .actions form{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    footer .newsletter .actions form input {
+        padding: 6px 8px;
+     }
+     footer .newsletter .actions form button{
+        width: 100%;
+     }
+     footer .links .logo {
+        column-gap: 8px;
+     }    
+     footer .links .logo > img {
+        width: 28px;
+    }
+     footer .links .logo h2 {
+     font-size: 18px;
+    }
+    footer .links .colmun{
+        max-width: max-content;
+        flex: 1 1 100px;
+    }
+    footer .links .colmun h4 {
+        padding-bottom: 7px;
+    }
+    footer .links .colmun li a {
+        line-height: 22px;
+    }
+    footer .links {
+     flex-wrap: wrap;
+     gap: 1em 2em;
+     justify-content: start;
+    }
+    footer .made-with p {
+        font-size: 16px;
+     }
+}
+@media screen and (min-width : 767px) and (max-width : 900px){
+    footer {
+        padding: 1em 1em 1em;
+        margin-top: 1em;
+    }
+    footer .newsletter h2 {
+        font-size: 20px;
+        padding-bottom: 7px;
+    }
+    footer .newsletter p {
+        line-height: 21px;
+     }
+    footer .newsletter h3 {
+        padding-top: 11px;
+        font-size: 18px;
+    }
+    footer .newsletter .frame-content {
+        padding-top: 6px;
+        column-gap: 1em;
+        flex-wrap: wrap;
+    }
+    footer .newsletter .actions h3 {
+        line-height: 22px;
+    }
+    footer .newsletter .actions form input {
+        padding: 5px 7px;
+     }
+     footer .newsletter .actions form input::placeholder{
+        font-size: 12px;
+     }
+     footer .links {
+        column-gap: 3em;
+    }
+     footer .links .logo {
+       
+        column-gap: 7px;
+       }
+    footer .links .logo > img {
+        width: 29px;
+    }
+    footer .links .logo h2 {
+        font-size: 23px;
+     }
+     footer .links .colmun h4 {
+        padding-bottom: 5px;
+    }
+    
+
+}

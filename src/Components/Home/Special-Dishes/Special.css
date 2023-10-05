@@ -1,0 +1,91 @@
+.special{padding: 2em 3em 2em;}
+.special .special-content{
+    text-align: center;
+}
+.special .special-content h1{
+    color: var(--black);
+    font-size: var(--font-title-h1);
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+.special .special-content p{
+    font-size: var(--font-para);
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--black);
+}
+.cards{
+    padding: 4em 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5em 3em;
+}
+.special .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0 0;
+}
+/**************************************************************$Media Query*******************************/
+@media screen and (max-width : 320px) {
+    .special {
+        padding: 1em;
+    }
+    .special .special-content h1 {
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .special .special-content p {
+        line-height: 15px;
+        font-size: 11px;
+    }
+  
+    .special .btns{
+        padding: 10px 0 0;
+    }
+}
+@media screen and (min-width : 320px) and (max-width : 480px){
+    .special {
+        padding: 1em;
+    }
+    .special .special-content h1 {
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .special .special-content p {
+        line-height: 20px;
+        font-size: 13px;
+    }
+  
+    .special .btns{
+        padding: 10px 0 0;
+    }
+}
+@media screen and (min-width : 480px) and (max-width : 767px) {
+    .special {
+        padding: 2em 1em 0em;
+    }
+    .special .special-content h1 {
+        font-size: 29px;
+        padding-bottom: 7px;
+     }
+     .special .special-content p {
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (min-width : 767px) and (max-wdith : 900px) {
+    .special {
+        padding: 1em 1em 1em;
+    }
+    .special .special-content h1 {
+        padding-bottom: 6px;
+        font-size: 31px;
+     }
+}

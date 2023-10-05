@@ -1,0 +1,295 @@
+.navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1em 3em;
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-right: auto;
+}
+.navbar .logo > img{
+    width: 35px;
+}
+.navbar .logo h2{
+    font-size: var(--font-title-h2);
+    font-family: 'Inter', sans-serif;   
+     font-weight: 700;
+     letter-spacing: 1px;
+}
+.navbar .box{
+    display: flex;
+    align-items: center;
+    column-gap: 3em;
+}
+.navbar .menubar .nav-links{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.navbar .menubar .nav-links li .links{
+    position: relative;
+    font-size: var(--font-para);
+    font-weight: 400;
+    color: var(--black);
+    letter-spacing: 1px;
+}
+.navbar .menubar .nav-links li .links::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    bottom: -5px;
+    background: var(--grey);
+    transition: 2s ease;
+}
+.navbar .menubar .nav-links li .links:hover:after{
+    width: 100%;
+    left: 0;
+}
+.navbar .menubar .nav-links li .links:hover{
+    color:var(--grey);
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+.navbar .btns{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 1em;
+}
+.navbar .btns form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    column-gap: 5px;
+    background: var(--white);
+    padding: 5px 8px;
+    border: 1.5px solid var(--black);
+    border-radius: 5px;
+}
+.navbar .btns form input{
+    background: local;
+    width: 90%;
+}
+.navbar .btns form input::placeholder{
+    color: var(--grey);
+    font-size: var(--font-button);
+    letter-spacing: 1px;
+}
+.navbar .toggle{
+    display: none;
+}
+/*****************************************************Media Query*********************************************************/
+@media screen and (max-width : 320px){
+    .navbar {
+    padding: 1em 1em;
+    justify-content: center;
+}
+.navbar .logo {
+    column-gap: 5px;
+}
+.navbar .logo > img {
+    width: 20px;
+}
+.navbar .logo h2 {
+    font-size: 14px;   
+}
+.navbar .box {
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    top:98%;
+}
+.navbar .toggle {
+    display: flex;
+    font-size: large;
+}
+.navbar .menubar .nav-links {
+    column-gap: 0;
+    gap: 16px;
+    flex-direction: column;
+}
+.navbar .menubar{
+    display: none;
+    width: 100%;
+    background: var(--black);
+    padding: 1.5em 0;
+}
+
+.navbar .menubar.active{
+    display: block;
+}
+
+.navbar .menubar .nav-links li .links {
+    color: var(--white);
+}
+.navbar .btns{
+    display: none;
+}
+}
+
+@media screen and (min-width : 320px) and (max-width : 480px){
+    .navbar {
+        padding: 1em 1em;
+        justify-content: center;
+    }
+    .navbar .logo {
+        column-gap: 6px;
+    }
+    .navbar .logo > img {
+        width: 25px;
+    }
+    .navbar .logo h2 {
+        font-size: 16px;   
+    }
+    .navbar .box {
+        position: absolute;
+        justify-content: center;
+        width: 100%;
+        top:98%;
+    }
+    .navbar .toggle {
+        display: flex;
+        font-size: x-large;
+    }
+    .navbar .menubar .nav-links {
+        column-gap: 0;
+        gap: 18px;
+        flex-direction: column;
+    }
+    .navbar .menubar{
+        display: none;
+        width: 100%;
+        background: var(--black);
+        padding: 1.5em 0;
+    }
+    
+    .navbar .menubar.active{
+        display: block;
+    }
+    
+    .navbar .menubar .nav-links li .links {
+        color: var(--white);
+    }
+    .navbar .btns{
+        display: none;
+    }
+}
+@media screen and (min-width : 480px) and (max-width : 767px){
+    .navbar {
+        padding: 1em 1em;
+        justify-content: center;
+    }
+    .navbar .logo {
+        column-gap: 8px;
+    }
+    .navbar .logo > img {
+        width: 28px;
+    }
+    .navbar .logo h2 {
+        font-size: 18px;   
+    }
+    .navbar .box {
+        position: absolute;
+        justify-content: center;
+        width: 100%;
+        top:98%;
+    }
+    .navbar .toggle {
+        display: flex;
+        font-size: x-large;
+    }
+    .navbar .menubar .nav-links {
+        column-gap: 0;
+        gap: 18px;
+        flex-direction: column;
+    }
+    .navbar .menubar{
+        display: none;
+        width: 100%;
+        background: var(--black);
+        padding: 1.5em 0;
+    }
+    
+    .navbar .menubar.active{
+        display: block;
+    }
+    
+    .navbar .menubar .nav-links li .links {
+        color: var(--white);
+        font-size: 16px;
+    }
+    .navbar .btns{
+        display: none;
+    }
+}
+@media screen and (min-width : 767px) and (max-width : 900px){
+    .navbar {
+        padding: 1em;
+    }
+    .navbar .logo {
+        column-gap: 4px;
+     }
+    .navbar .logo > img {
+        width: 28px;
+    }
+    .navbar .logo h2 {
+        font-size: 19px;
+     }
+     .navbar .box {
+        column-gap: 1em;
+    }
+    .navbar .menubar .nav-links {
+        column-gap: 10px;
+    }
+    .navbar .menubar .nav-links li .links {
+        font-size: 13px;
+     }
+     .navbar .btns {
+        column-gap: 5px;
+    }
+    .navbar .btns form {
+        width: auto; 
+        column-gap: 5px;
+        padding: 3px 6px ;
+        }
+        .navbar .btns form input::placeholder{
+            font-size: 12px;
+        }
+        .navbar .btns button{
+     display: none;
+        }
+}
+@media screen and (min-width : 900px) and (max-width : 1056px) {
+    .navbar {
+        padding: 1em ;
+    }
+    .navbar .logo {
+        display: flex;
+        align-items: center;
+        column-gap: 7px;
+        margin-right: auto;
+    }
+    .navbar .logo > img {
+        width: 29px;
+    }
+    .navbar .logo h2 {
+        font-size: 23px;
+     }
+     .navbar .box {
+        column-gap: 1em;
+    }
+    .navbar .menubar .nav-links {
+        column-gap: 11px;
+    }
+
+
+
+}

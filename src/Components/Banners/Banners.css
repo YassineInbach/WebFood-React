@@ -1,0 +1,376 @@
+.banner {
+  padding: 0 3em 1em;
+  border-bottom: 2px solid var(--black);
+}
+
+.banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner .container .content {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.banner .container .content p {
+  font-size: var(--font-text);
+  font-weight: 400;
+  color: var(--black);
+  letter-spacing: 0.5px;
+}
+
+.banner .container .content .line {
+  height: 22px;
+  width: 2px;
+  background: var(--grey);
+}
+
+.banner .container .icons {
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+}
+
+.banner .container .icons .icon {
+  color: var(--black);
+  font-size: 1.3em;
+}
+
+.banner .outlinePlus h2,
+.banner .outlinePlus button {
+  display: none;
+}
+.banner .outlinePlus button #icon{
+  color: var(--black);
+  font-size: x-large;
+}
+
+/*************************************************************Media Query****************************************************/
+@media screen and (max-width: 320px) {
+  .banner {
+    padding: 0 1em 5px;
+  }
+
+  .banner .outlinePlus h2,
+  .banner .outlinePlus button {
+    display: block;
+  }
+
+  .banner .container {
+    position: relative;
+    flex-direction: column;
+    padding: 10px 0;
+    display: none;
+  }
+
+  .banner .container.active {
+    display: flex;
+    gap: 10px 0;
+  }
+
+  .banner .container .content {
+    flex-direction: column;
+    gap: 7px 0;
+  }
+
+  .banner .container .content .line {
+    height: 2px;
+    width: 55px;
+  }
+
+  .banner .container .content p {
+    font-size: 11px;
+    line-height: 24px;
+  }
+
+  .banner .outlinePlus {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .banner .outlinePlus h2 {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--black);
+  }
+
+  .banner .outlinePlus button {
+    background: transparent;
+    padding: 0;
+    border: 0;
+    letter-spacing: 0;
+    border-radius: 0;
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .banner {
+    padding: 0 1em 6px;
+  }
+
+  .banner .outlinePlus h2,
+  .banner .outlinePlus button {
+    display: block;
+  }
+
+  .banner .container {
+    position: relative;
+    flex-direction: column;
+    padding: 10px 0;
+    display: none;
+  }
+
+  .banner .container.active {
+    display: flex;
+    gap: 10px 0;
+  }
+
+  .banner .container .content {
+    flex-direction: column;
+    gap: 7px 0;
+  }
+
+  .banner .container .content .line {
+    height: 2px;
+    width: 65px;
+  }
+
+  .banner .container .content p {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .banner .outlinePlus {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .banner .outlinePlus h2 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--black);
+  }
+
+  .banner .outlinePlus button {
+    background: transparent;
+    padding: 0;
+    border: 0;
+    letter-spacing: 0;
+    border-radius: 0;
+  }
+
+}
+@media screen and (min-width : 480px) and (max-width : 767px){
+  .banner {
+    padding: 0 1em 10px;
+  }
+
+  .banner .outlinePlus h2,
+  .banner .outlinePlus button {
+    display: block;
+  }
+
+  .banner .container {
+    position: relative;
+    flex-direction: column;
+    padding: 10px 0;
+    display: none;
+  }
+
+  .banner .container.active {
+    display: flex;
+    gap: 10px 0;
+  }
+
+  .banner .container .content {
+    flex-direction: column;
+    gap: 7px 0;
+  }
+
+  .banner .container .content .line {
+    height: 2px;
+    width: 65px;
+  }
+
+  .banner .container .content p {
+    font-size: 14.5px;
+    line-height: 27px;
+  }
+
+  .banner .outlinePlus {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .banner .outlinePlus h2 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--black);
+  }
+
+  .banner .outlinePlus button {
+    background: transparent;
+    padding: 0;
+    border: 0;
+    letter-spacing: 0;
+    border-radius: 0;
+  }
+
+ 
+}
+@media screen and (min-width : 767px) and (max-width : 900px){
+  .banner {
+    padding: 0 1em 5px;
+  }
+
+  .banner .outlinePlus h2,
+  .banner .outlinePlus button {
+    display: block;
+  }
+
+  .banner .container {
+    position: relative;
+    flex-direction: column;
+    padding: 10px 0;
+    display: none;
+  }
+
+  .banner .container.active {
+    display: flex;
+    gap: 10px 0;
+  }
+
+  .banner .container .content {
+    flex-direction: column;
+    gap: 7px 0;
+  }
+
+  .banner .container .content .line {
+    height: 2px;
+    width: 65px;
+  }
+
+  .banner .container .content p {
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  .banner .outlinePlus {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .banner .outlinePlus h2 {
+    font-size: 19px;
+    font-weight:500;
+    letter-spacing: 1.5px;
+    color: var(--black);
+  }
+
+  .banner .outlinePlus button {
+    background: transparent;
+    padding: 0;
+    border: 0;
+    letter-spacing: 0;
+    border-radius: 0;
+  }
+ 
+  
+} 
+@media screen and (min-width : 900px) and (max-width : 1218px){
+  .banner {
+    padding: 0 1em 5px;
+  }
+
+  .banner .outlinePlus h2,
+  .banner .outlinePlus button {
+    display: block;
+  }
+
+  .banner .container {
+    position: relative;
+    flex-direction: column;
+    padding: 10px 0;
+    display: none;
+  }
+
+  .banner .container.active {
+    display: flex;
+    gap: 10px 0;
+  }
+
+  .banner .container .content {
+    flex-direction: column;
+    gap: 7px 0;
+  }
+
+  .banner .container .content .line {
+    height: 2px;
+    width: 65px;
+  }
+
+  .banner .container .content p {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  .banner .outlinePlus {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .banner .outlinePlus h2 {
+    font-size: 23px;
+    font-weight:500;
+    letter-spacing: 1.5px;
+    color: var(--black);
+  }
+
+  .banner .outlinePlus button {
+    background: transparent;
+    padding: 0;
+    border: 0;
+    letter-spacing: 0;
+    border-radius: 0;
+  }
+
+  .banner .outlinePlus button #icon {
+    font-size: xx-large;
+  }
+  
+}
+@media screen and (max-width : 1218px){
+  .banner {
+    padding: 0 1em 5px;
+}
+.banner .container .icons {
+  column-gap: 8px;
+}
+.banner .container .content {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+}
